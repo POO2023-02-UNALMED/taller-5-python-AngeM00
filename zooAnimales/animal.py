@@ -56,7 +56,7 @@ class Animal:
         cantidadPez = Pez.cantidadPeces()
         cantidadAnfibios = Anfibio.cantidadAnfibios()
         
-        return f'''Mamiferos: {cantidadMamiferos}\nAves: {cantidadAves}\nReptiles: {cantidadReptiles}\nPeces: {cantidadPez}\nAnfibios: {cantidadAnfibios}'''
+        return f'''Mamiferos : {cantidadMamiferos}\nAves : {cantidadAves}\nReptiles : {cantidadReptiles}\nPeces : {cantidadPez}\nAnfibios : {cantidadAnfibios}'''
     
     def __str__(self) -> str:
         frase = ""
