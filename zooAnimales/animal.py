@@ -44,11 +44,11 @@ class Animal:
     @classmethod
     def totalPorTipo(cls) -> str:
         #imports
-        from zooAnimales.Mamifero import Mamifero
-        from zooAnimales.Ave import Ave
-        from zooAnimales.Reptil import Reptil
-        from zooAnimales.Pez import Pez
-        from zooAnimales.Anfibio import Anfibio
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.ave import Ave
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.pez import Pez
+        from zooAnimales.anfibio import Anfibio
         
         cantidadMamiferos = Mamifero.cantidadMamiferos()
         cantidadAves = Ave.cantidadAves()
@@ -60,9 +60,14 @@ class Animal:
     
     def __str__(self) -> str:
         frase = ""
-        print(self._zona)
         if len(self._zona) != 0:
             nombre = self._zona.__getitem__(0).getNombre()
             frase = f", la zona en la que me ubico es {nombre}, en el {self._zona[0].getZoo().getNombre()}"
         return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"+frase
     
+    def toString(self):
+        frase = ""
+        if len(self._zona) != 0:
+            nombre = self._zona.__getitem__(0).getNombre()
+            frase = f", la zona en la que me ubico es {nombre}, en el {self._zona[0].getZoo().getNombre()}"
+        return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"+frase

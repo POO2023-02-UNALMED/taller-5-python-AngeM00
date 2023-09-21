@@ -11,7 +11,7 @@ class Zona:
         self._nombre = nombre
     
     def getZoo(self):
-        return self._zoo[0]
+        return self._zoo
     
     def setZoo(self, zoo):
         if self._zoo == None:

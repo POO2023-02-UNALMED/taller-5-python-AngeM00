@@ -5,6 +5,9 @@ class Zoologico:
         self._zonas = zonas
         
     #Getters y setters
+    def getZona(self):
+        return self._zonas
+    
     def getNombre(self) -> str:
         return self._nombre
     
